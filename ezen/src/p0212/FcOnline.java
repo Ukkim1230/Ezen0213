@@ -51,8 +51,11 @@ public class FcOnline {
 		pl.add(p5);
 
 		for (Player p : pl) {
-			if(p.getFooted().indexOf("양발잡이")==0 && p.getStats()>120 && p.getHeight()>185.0)
-			System.out.println(p);
+			if (p.getFooted().indexOf("왼발잡이") == 0 && p.getStats() > 120 && p.getHeight() > 185.0) {
+				System.out.println(p);
+			} else {
+				System.out.println("조건에 맞는 선수는 존재하지 않습니다.");
+			}
 
 		}
 	}
