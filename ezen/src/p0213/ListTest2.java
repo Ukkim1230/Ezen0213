@@ -10,5 +10,4 @@ public class ListTest2 {
 		List<Action> actList = new ArrayList<>();
 		List<String> strs = new LinkedList<>();
 	}
-
 }
