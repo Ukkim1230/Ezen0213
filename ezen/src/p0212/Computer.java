@@ -5,6 +5,8 @@ public class Computer {// alt + g , alt + t
 	private String cpu;
 	private String ram;
 	private String hdd;
+	private String gpu;
+	private String main;
 
 	public String getHdd() {
 		return hdd;
@@ -14,9 +16,8 @@ public class Computer {// alt + g , alt + t
 		this.hdd = hdd;
 	}
 
-	@Override
 	public String toString() {
-		return "Computer [cpu=" + cpu + ", ram=" + ram + ", hdd=" + hdd + ", main=" + main + ", gpu=" + gpu + "]";
+		return "Computer [cpu=" + cpu + ", ram=" + ram + ", hdd=" + hdd + ", gpu=" + gpu + ", main=" + main + "]";
 	}
 
 	public String getCpu() {
@@ -51,7 +52,5 @@ public class Computer {// alt + g , alt + t
 		this.gpu = gpu;
 	}
 
-	private String main;
-	private String gpu;
 
 }
