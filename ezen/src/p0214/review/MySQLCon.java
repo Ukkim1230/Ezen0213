@@ -20,19 +20,17 @@ public class MySQLCon {
 		try {
 			Connection con = DriverManager.getConnection(url,username,password);
 			Statement stmt = con.createStatement();
-			String sql = "insert into FOOD_INFO(FI_NAME, FI_PRICE)"
-			+"VALUES('김밥',3500)";
-		int result = stmt.executeUpdate(sql);
-		if(result>=1) {
-			System.out.println("입력 성공!!");
-		}else {
-			System.out.println("오류는 안났지만 입력이 안됐어요");
-		}
+			String sql = "insert into FOOD_INFO(FI_NAME,FI_PRICE)"
+					+ "VALUES('김밥',3500)";
+			int result = stmt.executeUpdate(sql);
+			if(result>=1) {
+				System.out.println("입력 성공!!");
+			}else {
+				System.out.println("입력 X");
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-	
-		
 	}
 
 }

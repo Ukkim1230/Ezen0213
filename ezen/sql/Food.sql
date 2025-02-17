@@ -1,8 +1,8 @@
 use EZEN;
 create table FOOD_INFO(
-F1_NUM INT primary key auto_increment,
-F1_NAME VARCHAR(30) not null,
-F1_PRICE INT not null
+FI_NUM INT primary key auto_increment,
+FI_NAME VARCHAR(30) not null,
+FI_PRICE INT not null
 );
 
 insert into FOOD_INFO(FI_NAME, FI_PRICE)

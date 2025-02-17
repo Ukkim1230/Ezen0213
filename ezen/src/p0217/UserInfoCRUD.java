@@ -61,7 +61,7 @@ public class UserInfoCRUD {
 	public static int updateUserInfo(String uiName, String uiId, String uiPwd) {
 		try {
 			Statement stmt = con.createStatement();
-			String sql = "UPDATE USER_INFO SET UI_NAME WHERE UI_NAME='홍길동'";
+			String sql = "UPDATE USER_INFO SET UI_NAME='김기리기리'WHERE UI_NAME='이길동'";
 			return stmt.executeUpdate(sql);
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -74,5 +74,8 @@ public class UserInfoCRUD {
 		System.out.println("입력한 갯수 :" + result);
 		result = deleteUserInfo(3);
 		System.out.println("삭제한 갯수 : " + result);
+		result = updateUserInfo("이길동","lee","r1r2r3");
+		System.out.println("업데이트 된 갯수 : "+result);
+		
 	}
 }
