@@ -20,7 +20,7 @@ public class MySQLCon {
 			try {
 				Connection con = DriverManager.getConnection(url, username, password);
 				Statement stmt = con.createStatement();
-				String sql = "insert into FOOD_INFO(FI_NAME, FI_PRICE)\r\n"
+				String sql = "INSERT INTO FOOD_INFO(FI_NAME, FI_PRICE)\r\n"
 						+ "VALUES('김밥',3500)";
 				int result = stmt.executeUpdate(sql);
 				if(result>=1) {
